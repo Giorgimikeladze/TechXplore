@@ -1,0 +1,6 @@
+@API_HostAddress = http://localhost:2040
+
+GET {{API_HostAddress}}/Quiz/GetAllQuiz
+Accept: application/json
+
+###
