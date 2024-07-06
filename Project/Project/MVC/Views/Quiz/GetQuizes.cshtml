@@ -1,0 +1,28 @@
+﻿@using Application.Models.Quizs
+
+@model List<QuizViewModel>
+
+<link rel="stylesheet" href="~/css/styles.css">
+@foreach (var model in Model)
+{
+
+
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="~/Photos/asd.webp" alt="Airpods 3rd Gen">
+        <h3>Airpods | 3rd Gen</h3>
+        <div class="countdown">0 days : 10 hours : 53 minutes : 13 seconds</div>
+        <div class="bid-info">Last bid: 149 ₾</div>
+        <div class="progress-bar">
+            <div class="blue">2 ₾</div>
+            <div class="orange">3 ₾</div>
+            <div class="red">4 ₾</div>
+        </div>
+        <div class="bid-count">Bids: 151</div>
+        <div class="bid-amount">Highest Bid: 649 ₾</div>
+        <button>Place a Bid</button>
+    </div>
+
+
+
+}

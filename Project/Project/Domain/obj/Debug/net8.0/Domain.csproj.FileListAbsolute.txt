@@ -1,0 +1,12 @@
+C:\TBCHackaton\API\API\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\TBCHackaton\API\API\Domain\bin\Debug\net8.0\Domain.dll
+C:\TBCHackaton\API\API\Domain\bin\Debug\net8.0\Domain.pdb
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\Domain.dll
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\Domain.pdb
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\TBCHackaton\API\API\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache

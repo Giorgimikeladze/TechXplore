@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] - QWizard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<header>
+    <div class="navbar">
+        @*  <a asp-controller="Home" asp-action="Index" class="nav-logo">Forum App</a> *@
+
+        <h2>Qwizard</h2>
+
+        <form asp-controller="User" asp-action="Search" class="search-form">
+            <label for="email" class="search-label">Search for stuff</label>
+            <input name="email" id="search" class="search-input" type="search" placeholder="Search..." autofocus required />
+            <button class="search-button" type="submit">Search</button>
+        </form>
+
+        <ul class="nav-links">
+
+            <li class="nav-link">
+                <a asp-controller="Home" asp-action="Index" class="button-24">Home</a>
+            </li>
+            <li class="nav-link">
+                <a asp-controller="User" asp-action="Login" class="button-24">Login</a>
+            </li>
+            <li class="nav-link">
+                <a asp-controller="User" asp-action="Index" class="button-24">User</a>
+            </li>
+        </ul>
+        @* <ul class="nav-links2">
+        <li class="nav-link2">asd</li>
+        <li class="nav-link2">temp</li>
+        </ul> *@
+        <!-- End of Navigation Links -->
+    </div>
+    <hr>
+
+
+
+</header>
+
+<body>
+    <div class="Info">
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["ErrorMessage"]
+            </div>
+            TempData.Remove("ErrorMessage");
+
+        }
+        @if (TempData["Information"] != null)
+        {
+
+            <div class="alert alert-info">
+                @TempData["Information"]
+            </div>
+            TempData.Remove("Information");
+        }
+    </div>
+
+    @RenderBody()
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib//jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
